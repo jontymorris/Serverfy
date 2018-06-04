@@ -5,12 +5,11 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"path/filepath"
 )
 
 func main() {
 	// Get the current directory
-	dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
+	dir, err := os.Getwd()
 	if err != nil {
 		log.Fatal("Couldn not get the current directory")
 	}
