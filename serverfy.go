@@ -11,7 +11,7 @@ func main() {
 	// Get the current directory
 	dir, err := os.Getwd()
 	if err != nil {
-		log.Fatal("Couldn not get the current directory")
+		log.Fatal("Couldn't get the current working directory")
 	}
 
 	// Make the file server
